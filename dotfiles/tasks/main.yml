@@ -1,0 +1,14 @@
+---
+
+- name: Make sure dotfiles are present
+  git:
+    repo: "{{dotfiles_repo}}"
+    version: "{{ dotfiles_repo_branch }}"
+    dest: "{{dotfiles_repo_local_destination}}"
+    
+
+- name: Deploy Git Config 
+  copy:
+    src: "{{gitconfig_src}}"
+    dest: "{{gitconfig_dest}}"
+    owner: "{{ ansible_user }}"

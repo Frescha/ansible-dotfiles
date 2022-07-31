@@ -1,0 +1,15 @@
+---
+
+# System bootstrap
+timezone: 'Europe/Berlin'
+
+home: '~'
+home_dotfiles: '~/.dotfiles'
+
+dotfiles_repo: 'https://github.com/Frescha/dotfiles.git'
+dotfiles_repo_branch: 'main'
+dotfiles_repo_local_destination: '~/.dotfiles'
+
+gitconfig_src: '~/.dotfiles/linux_mac/git/gitconfig'
+gitconfig_dest: '~/.gitconfig'
+

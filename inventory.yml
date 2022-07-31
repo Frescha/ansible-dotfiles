@@ -1,0 +1,7 @@
+all:
+  hosts:
+    localhost:
+      ansible_host: octo
+      ansible_connection: local
+      ansible_user: pirate
+      ip: 127.0.0.1
