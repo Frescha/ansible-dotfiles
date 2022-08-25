@@ -13,3 +13,10 @@ dotfiles_repo_local_destination: '~/.dotfiles'
 gitconfig_src: '~/.dotfiles/linux_mac/git/gitconfig'
 gitconfig_dest: '~/.gitconfig'
 
+zshrc_src: '~/.dotfiles/linux_mac/zshrc/zshrc'
+zshrc_dest: '~/.zshrc'
+
+ssh_src: '~/.dotfiles/linux_mac/ssh/config'
+ssh_dest: '~/.ssh/config'
+
+ansible_user: 'frescha'

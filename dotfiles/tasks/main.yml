@@ -11,4 +11,16 @@
   copy:
     src: "{{gitconfig_src}}"
     dest: "{{gitconfig_dest}}"
-    owner: "{{ ansible_user }}"
+    owner: "{{ansible_user}}"
+
+- name: Deploy oh-my-zsh config file 
+  copy:
+    src: "{{zshrc_src}}"
+    dest: "{{zshrc_dest}}"
+    owner: "{{ansible_user}}"
+
+- name: Deploy ssh config file 
+  copy:
+    src: "{{ssh_src}}"
+    dest: "{{ssh_dest}}"
+    owner: "{{ansible_user}}"

@@ -1,0 +1,13 @@
+---
+
+- hosts: all
+  vars_files:
+    - host_vars/config.yml
+
+  tasks:
+    - name: Update dotfiles
+      git:
+        repo: "{{dotfiles_repo}}"
+        dest: "{{dotfiles_repo_local_destination}}"
+        update: yes
+        version: "{{ dotfiles_repo_branch }}"
